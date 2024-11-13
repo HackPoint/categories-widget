@@ -40,7 +40,11 @@ Follow these instructions to clone, install, build, and run CityShob locally:
    Open [http://localhost:4200](http://localhost:4200) in your browser.
 
 ---
+Screenshot:
+![Application Screenshot](./assets/screenshot.png)
 
+
+---
 ## Questions Answered
 
 ### Plugins/Extensions
