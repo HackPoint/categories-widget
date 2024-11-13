@@ -1,0 +1,10 @@
+mongo-url = "mongodb://root:password@mongodb:27017"
+elasticsearch-urls = ["http://elasticsearch:9200"]
+
+direct-read-namespaces = ["cityshob.widgets"]
+
+change-stream-namespaces = ["cityshob.widgets"]
+
+gzip = true
+index-as-update = true
+exit-after-direct-reads = false

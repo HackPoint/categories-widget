@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.resize-handle {
+  @apply cursor-se-resize;
+}
+
+.loading::after {
+  content: '';
+  border: 2px solid #ccc;
+  border-top-color: #3498db;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  right: 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.status-badge {
+  @apply flex items-center px-2 py-1 text-xs font-semibold rounded-lg;
+
+  &.stable {
+    @apply text-green-600 bg-green-100;
+  }
+
+  &.unstable {
+    @apply text-orange-600 bg-orange-100;
+  }
+
+  &.disconnected {
+    @apply text-red-600 bg-red-100;
+  }
+
+  &.default {
+    @apply text-gray-600 bg-gray-100;
+  }
+}
